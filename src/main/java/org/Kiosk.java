@@ -80,7 +80,7 @@ public class Kiosk {
     // 음료 메뉴 선택 메서드
     private void drinkMenu(Scanner scanner) {
         System.out.println("[ DRINKS MENU ]");
-        // drinkMenu의 모든 항목 출력됨
+        // drinkMenu의 모든 항목 출력됨 (람다 사용)
         drinkMenu.forEach(item -> System.out.println(drinkMenu.indexOf(item) + 1 + ". " + item));
         System.out.println("0. 뒤로가기");
         System.out.print("메뉴를 선택하세요: ");
@@ -104,7 +104,7 @@ public class Kiosk {
     // 디저트에 메뉴 선택 메서드
     private void dessertMenu(Scanner scanner) {
         System.out.println("[ DESSERTS MENU ]");
-        // dessertMenu 리스트의 모든 항목을 출력
+        // dessertMenu 리스트의 모든 항목을 출력 (람다 사용)
         dessertMenu.forEach(item -> System.out.println(dessertMenu.indexOf(item) + 1 + ". " + item));
         System.out.println("0. 뒤로가기");
         System.out.print("메뉴를 선택하세요: ");
