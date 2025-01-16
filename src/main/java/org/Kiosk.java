@@ -82,7 +82,7 @@ public class Kiosk {
         int menuChoice = scanner.nextInt();
 
         if (menuChoice == 0) {
-            return;
+            return; // 뒤로가기 선택 시 메뉴를 종료함
         }
         // 선택한 메뉴 아이템
         MenuItem selectedItem = drinkMenu.get(menuChoice - 1);
