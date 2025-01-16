@@ -1,5 +1,4 @@
 package org;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -9,7 +8,7 @@ public class Kiosk {
     private List<MenuItem> burgerMenu;
     private List<MenuItem> drinkMenu;
     private List<MenuItem> dessertMenu;
-    private List<MenuItem> cart = new ArrayList<>();  // 장바구니
+    private List<MenuItem> cart = new ArrayList<>();  // 장바구니 (구매할 메뉴를 담는 곳)
 
     // Kiosk 생성자 : 메뉴 항목들을 받고 각각의 메뉴를 초기화한다!
     public Kiosk(List<MenuItem> burgerMenu, List<MenuItem> drinkMenu, List<MenuItem> dessertMenu) {
@@ -61,10 +60,6 @@ public class Kiosk {
         System.out.println("0. 뒤로가기");
         System.out.print("메뉴를 선택하세요: ");
         int menuChoice = scanner.nextInt();
-
-        if (menuChoice == 0) {
-            return;
-        }
         // 선택한 메뉴 아이템
         MenuItem selectedItem = burgerMenu.get(menuChoice - 1);
         System.out.println("선택한 메뉴: " + selectedItem);
