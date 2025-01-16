@@ -22,7 +22,7 @@ public class Kiosk {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            // MAIN MENU 출력
+            // MAIN MENU 출력 (사용자에게 메뉴 카테고리를 선택하도록 함)
             System.out.println("[ MAIN MENU ]");
             System.out.println("1. Burgers");
             System.out.println("2. Drinks");
